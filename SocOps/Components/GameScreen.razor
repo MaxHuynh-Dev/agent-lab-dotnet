@@ -2,31 +2,31 @@
 
 <div class="flex flex-col min-h-full bg-gray-50">
     <!-- Header -->
-    <header class="flex items-center justify-between p-3 bg-white border-b border-gray-200">
+    <header class="flex items-center justify-between p-4 bg-white border-b border-gray-200 shadow-sm">
         <button
             @onclick="OnReset"
-            class="text-gray-500 text-sm px-3 py-1.5 rounded active:bg-gray-100">
+            class="text-gray-600 text-sm px-3 py-1.5 rounded hover-lift-sm hover:bg-gray-100 transition-all duration-300">
             ← Back
         </button>
-        <h1 class="font-bold text-gray-900">Soc Ops</h1>
+        <h1 class="font-bold text-gray-900 text-lg">Soc Ops</h1>
         <div class="w-16"></div>
     </header>
 
     <!-- Instructions -->
-    <p class="text-center text-gray-500 text-sm py-2 px-4">
+    <p class="text-center text-gray-600 text-sm py-3 px-4 font-medium">
         Tap a square when you find someone who matches it.
     </p>
 
     <!-- Bingo indicator -->
     @if (HasBingo)
     {
-        <div class="bg-amber-100 text-amber-800 text-center py-2 font-semibold text-sm">
+        <div class="bg-amber-100 text-amber-800 text-center py-3 font-semibold text-sm border-b border-amber-200 animate-fade-in">
             🎉 BINGO! You got a line!
         </div>
     }
 
     <!-- Board -->
-    <div class="flex-1 flex items-center justify-center p-3">
+    <div class="flex-1 flex items-center justify-center p-6 animate-fade-in">
         <BingoBoard
             Board="@Board"
             WinningSquareIds="@WinningSquareIds"

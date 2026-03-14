@@ -1,15 +1,17 @@
 html[data-theme="light"] {
-    --bg-dark: #f5f5f7;
+    --bg-dark: #fafafa;
     --bg-card: #ffffff;
-    --bg-code: #f0f0f5;
-    --neon-cyan: #0077b6;
-    --neon-magenta: #c2185b;
-    --neon-purple: #7b1fa2;
-    --text-primary: #1a1a2e;
-    --text-secondary: #555570;
-    --border-color: #d0d0dd;
-    --success-green: #2e7d32;
-    --warning-yellow: #f9a825;
+    --bg-code: #f3f4f6;
+    --neon-cyan: #3b82f6;
+    --neon-magenta: #8b5cf6;
+    --neon-purple: #6366f1;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --success-green: #10b981;
+    --warning-yellow: #f59e0b;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 html[data-theme="light"] body::before {
@@ -37,12 +39,12 @@ html[data-theme="light"] .btn-secondary {
 }
 
 html[data-theme="light"] .btn-secondary:hover {
-    background: rgba(0,119,182,0.1);
+    background: rgba(59,130,246,0.05);
     border-color: var(--neon-cyan);
 }
 
 html[data-theme="light"] .card {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-sm);
 }
 
 .theme-toggle {
